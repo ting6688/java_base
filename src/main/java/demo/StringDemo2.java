@@ -1,5 +1,7 @@
 package demo;
 
+import java.util.Arrays;
+
 public class StringDemo2 {
 
     public static void main(String[] args) {
@@ -26,6 +28,18 @@ public class StringDemo2 {
         boolean startsWith = str1.startsWith(str1);
         System.out.println("startsWith:"+ startsWith);
 
+        boolean abc = "abc".equals("abc");
+        System.out.println("abc:"+abc);
+
+        boolean aBc = "abc".equals("aBc");
+        System.out.println("aBc:"+aBc);
+        boolean aBC = "abc".equalsIgnoreCase("aBC");
+        System.out.println("aBc:"+aBC);
+        // string-->byte[]
+        String str2 = "abc";
+        char[] chars = str2.toCharArray();
+        // chars:[a, b, c]
+        System.out.println("chars:"+ Arrays.toString(chars));
 
     }
 }
